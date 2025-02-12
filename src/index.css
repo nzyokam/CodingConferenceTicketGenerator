@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./assets/fonts/static/Inconsolata-Regular.ttf") format("truetype"),
+    url("./assets/fonts/Inconsolata-Bold.ttf") format("truetype"),
+    url("./assets/fonts/Inconsolata-ExtraBold.ttf") format("truetype"),
+    url("./assets/fonts/Inconsolata-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inconsolata Variable";
+  src: url("./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inconsolata", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: "Inconsolata Variable", sans-serif;
+  font-weight: 600;
+}
+
+.app-container {
+  font-family: "Inconsolata", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #f57464;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background: #c03d7d;
+}
+
+.success-message {
+  text-align: center;
+  background: none;
+}
+
+.success-message h2 {
+  font-family: "Inconsolata Variable", sans-serif;
+  font-weight: bold;
+}
+.background {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.ticknumber {
+  text-align: right;
+  writing-mode: vertical-rl;
+ 
+}
+.ticket span {
+  font-family: "Inconsolata";
+}
+
+.back {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.back-upload {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+
+.btt {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4px;
+  font-family: "Inconsolata Variable";
+}
+
+@media (max-width: 344px) {
+  .app-container {
+    padding: 0 10px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  .form-container input {
+    font-size: 14px;
+  }
+
+  .form-container button {
+    font-size: 14px;
+  }
+
+  .ticket {
+    padding: 15px;
+  }
+
+  .ticknumber {
+    font-size: 0.8rem;
+  }
+}
+
+/* ms screens */
+@media (max-width: 390px) {
+  .app-container {
+    padding: 0 15px;
+  }
+
+  .form-container {
+    padding: 18px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  .form-container input {
+    font-size: 14px;
+  }
+
+  .form-container button {
+    font-size: 15px;
+  }
+
+  .ticket {
+    padding: 18px;
+  }
+
+  .ticknumber {
+    font-size: 0.85rem;
+  }
+}
+
+/* sm screens */
+@media (max-width: 430px) {
+  .app-container {
+    padding: 0 15px;
+  }
+
+  .form-container {
+    padding: 18px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-container input {
+    font-size: 15px;
+  }
+
+  .form-container button {
+    font-size: 15px;
+  }
+
+  .ticket {
+    padding: 18px;
+  }
+
+  .ticknumber {
+    font-size: 0.85rem;
+  }
+}
+
+.transition {
+  transition: all 0.6s ease-in-out;
+}
